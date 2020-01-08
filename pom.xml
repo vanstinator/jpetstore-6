@@ -35,25 +35,28 @@
   <url>http://www.mybatis.org</url>
 
   <scm>
-    <url>http://github.com/mybatis/jpetstore-6</url>
-    <connection>scm:git:ssh://github.com/mybatis/jpetstore-6.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/mybatis/jpetstore-6.git</developerConnection>
+    <url>http://github.com/Coveros/jpetstore-6</url>
+    <connection>scm:git:ssh://github.com/Coveros/jpetstore-6.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/Coveros/jpetstore-6.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
   <issueManagement>
     <system>GitHub Issue Management</system>
-    <url>https://github.com/mybatis/jpetstore/issues</url>
+    <url>https://github.com/Coveros/jpetstore/issues</url>
   </issueManagement>
   <ciManagement>
     <system>Travis CI</system>
     <url>https://travis-ci.org/mybatis/jpetstore-6</url>
   </ciManagement>
   <distributionManagement>
-    <site>
-      <id>gh-pages</id>
-      <name>Mybatis GitHub Pages</name>
-      <url>git:ssh://git@github.com/mybatis/jpetstore-6.git?gh-pages#</url>
-    </site>
+    <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <url>http://nexusip/repository/maven-snapshots/</url>
+    </snapshotRepository>
+    <repository>
+      <id>nexus-releases</id>
+      <url>http://nexusip/repository/maven-releases/</url>
+    </repository>
   </distributionManagement>
 
   <dependencies>
