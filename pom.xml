@@ -219,7 +219,7 @@
           <artifactId>dependency-check-maven</artifactId>
           <version>${dependency.check.maven.version}</version>
           <configuration>
-            <!-- <failBuildOnCVSS>${dependency.check.maven.failBuildOnCVSS}</failBuildOnCVSS> -->
+            <failBuildOnCVSS>${dependency.check.maven.failBuildOnCVSS}</failBuildOnCVSS>
             <formats>HTML,XML</formats>
           </configuration>
           <executions>
